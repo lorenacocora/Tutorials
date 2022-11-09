@@ -1,0 +1,6 @@
+<div [ngClass]="{ 'bigdiv' : movieInChild.isSelected }" *ngIf="movieInChild">
+    <h2>{{movieInChild.title | uppercase}}</h2>
+    <p>{{movieInChild.date | date}}</p>
+    <p>{{movieInChild.director}}</p>
+    <button (click)="onButtonClick()">{{movieInChild.id}}</button>
+</div>
